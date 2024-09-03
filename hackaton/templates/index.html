@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+            border-radius:20px;
+        }
+
+        .navbar .sign-in {
+            float: right;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 60px 20px; /* Adjust padding to ensure content is not hidden behind navbar */
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 24px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .search-container {
+            margin-bottom: 20px;
+        }
+
+        #search-button {
+            padding: 20px 40px;
+            font-size: 16px;
+            background-color: #fff;
+            color:balck;
+            border: none;
+            cursor: pointer;
+            border-radius:20px;
+        }
+
+        #search-button:hover {
+            
+                transform: scale(1.1); /* Scales the button up by 10% */
+                background-color: #333; /* Optional: change background color on hover */
+                color:white;
+          
+        }
+
+        .footer {
+            background-color: #333;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size:20px;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: #cccccc;
+        }
+        .sign-in{
+            margin-right:27px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home"><i class="fa-solid fa-house"></i> </a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="/signin" class="sign-in">Sign In</a>
+    </div>
+
+    <div class="content">
+        <div class="search-container">
+            <div class="click" style="font-size:15px;">Click here to connect</div>
+            <br>
+            <a href="/model"><button id="search-button">Scan <i class="fa-solid fa-arrow-up-from-bracket"></i></button></a>
+        </div>
+        <h1>Welcome to Our Website</h1>
+        <p>Your journey to discovering more starts here. Explore our site to find out more about what we offer.</p>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 Your Website. All Rights Reserved.</p>
+        <p>
+            <a href="#privacy">Privacy Policy</a> | 
+            <a href="#terms">Terms of Service</a> | 
+            <a href="#contact">Contact Us</a>
+        </p>
+    </div>
+</body>
+</html>
